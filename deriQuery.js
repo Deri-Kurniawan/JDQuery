@@ -31,9 +31,9 @@ class deriQuery {
      */
     html(replacer = null) {
         if (replacer == null) {
-            return this.query.value;
+            return this.query.innerHTML;
         }
-        return this.query.value = replacer;
+        return this.query.innerHTML = replacer;
     }
 
     /**
@@ -43,8 +43,8 @@ class deriQuery {
      */
     text(replacer = null) {
         if (replacer == null) {
-            return this.query.value;
+            return this.query.innerText;
         }
-        return this.query.value = replacer;
+        return this.query.innerText = replacer;
     }
 }
