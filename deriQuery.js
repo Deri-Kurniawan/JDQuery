@@ -1,3 +1,6 @@
+// DERI KURNIAWAN QUERY
+// https://github.com/Deri-Kurniawan/deriQuery
+
 /**
  * Query Selector
  * @param {String} query 
@@ -51,6 +54,7 @@ class deriQuery {
     /**
      * set event listener
      * @param {string} event event receive
+     * @param {function} callback callback on event
      * @returns event
      */
     on(event = null, callback) {
