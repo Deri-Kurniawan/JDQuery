@@ -26,7 +26,7 @@ class deriQuery {
 
     /**
      * get innerHTML model on element or replace value of html document element
-     * @param {string} replacer replace html element
+     * @param {string} replacer replace html document element
      * @returns string
      */
     html(replacer = null) {
@@ -38,7 +38,7 @@ class deriQuery {
 
     /**
      * get innerText model on element or replace value of text document element
-     * @param {string} replacer replace html element
+     * @param {string} replacer replace html text value element
      * @returns string
      */
     text(replacer = null) {
@@ -46,5 +46,17 @@ class deriQuery {
             return this.query.innerText;
         }
         return this.query.innerText = replacer;
+    }
+
+    /**
+     * set event listener
+     * @param {string} event event receive
+     * @returns event
+     */
+    on(event = null, callback) {
+        if (event == null) {
+            console.error('Event not set!');
+        }
+        return this.query.addEventListener(event, callback());
     }
 }
