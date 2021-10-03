@@ -1,2 +1,2 @@
-# deriQuery
-deriQuery is javascript queries library
+# jdQuery
+javascript deriQuery is javascript queries library
