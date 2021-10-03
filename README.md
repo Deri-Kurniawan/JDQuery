@@ -1,4 +1,5 @@
-# Javascript Deri Query Version 0.1 BETA (Under Constructions)
+# Javascript Deri Query (Under Constructicons)
+Javascript Deri Query is javascript queries library
 
 ## Get Started
 ### Javascript Deri Query CDN
