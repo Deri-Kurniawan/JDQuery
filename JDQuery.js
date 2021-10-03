@@ -1,5 +1,6 @@
-// DERI KURNIAWAN QUERY
-// https://github.com/Deri-Kurniawan/JDQuery
+// Javascript Deri Query
+// Author : Deri Kurniawan
+// Source : https://github.com/Deri-Kurniawan/JDQuery
 
 /**
  * Query Selector
