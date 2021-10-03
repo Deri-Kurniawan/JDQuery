@@ -52,6 +52,22 @@ class JDQuery {
     }
 
     /**
+     * Get, Set and Replace attribute element
+     * @param {String} key attribute key 
+     * @param {String} value value of attribute key
+     * @returns 
+     */
+    attr(key = null, value = null) {
+        if (key !== null && value !== null) {
+            return this.query.setAttribute(key, value);
+        } else if (key === null && value === null) {
+            return this.query.attributes;
+        } else if (key !== null) {
+            return this.query.getAttribute(key);
+        }
+    }
+
+    /**
      * Set event listener
      * @param {String} event event receive
      * @param {Function} handler callback event handler
@@ -59,11 +75,9 @@ class JDQuery {
      */
     on(event = null, handler) {
         if (event == null) {
-            console.error('Event rule not set!');
-            return;
+            return console.error('Event rule not set!');
         } else if (typeof handler !== "function") {
-            console.error('Callback Event Handler not set!');
-            return;
+            return console.error('Callback Event Handler not set!');
         } else {
             return this.query.addEventListener(event, handler);
         }
