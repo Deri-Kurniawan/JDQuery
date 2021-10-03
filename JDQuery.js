@@ -4,11 +4,20 @@
 
 /**
  * Query Selector
- * @param {String} query 
+ * @param {String} query
  * @returns document element
  */
 const $ = (query) => {
     return new JDQuery(query);
+}
+
+/**
+ * Query Selector All
+ * @param {String} query
+ * @returns 
+ */
+const $$ = (query) => {
+    return document.querySelectorAll(query);
 }
 
 class JDQuery {
@@ -50,6 +59,15 @@ class JDQuery {
             return this.query.innerText;
         }
         return this.query.innerText = replacer;
+    }
+
+    /**
+     * Adding Class(s) 
+     * @param {String} values class values
+     * @returns 
+     */
+    addClass(values) {
+        return this.query.classList.add(values);
     }
 
     /**
