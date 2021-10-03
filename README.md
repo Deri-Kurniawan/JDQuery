@@ -1,2 +1,2 @@
 # deriQuery
-deriQuery is javascript queries helper
+deriQuery is javascript queries library
