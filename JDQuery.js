@@ -1,16 +1,16 @@
 // DERI KURNIAWAN QUERY
-// https://github.com/Deri-Kurniawan/deriQuery
+// https://github.com/Deri-Kurniawan/JDQuery
 
 /**
  * Query Selector
  * @param {String} query 
  * @returns document element
  */
-function $(query) {
-    return new deriQuery(query);
+const $ = (query) => {
+    return new JDQuery(query);
 }
 
-class deriQuery {
+class JDQuery {
     constructor(query) {
         this.query = document.querySelector(query);
     }
@@ -54,13 +54,15 @@ class deriQuery {
     /**
      * set event listener
      * @param {string} event event receive
-     * @param {function} callback callback on event
+     * @param {function} callback callback event handler
      * @returns event
      */
     on(event = null, callback) {
         if (event == null) {
             console.error('Event not set!');
+        } else if (typeof callback !== "function") {
+            console.error('Callback Event Handler not set!')
         }
-        return this.query.addEventListener(event, callback());
+        return this.query.addEventListener(event, callback);
     }
 }
