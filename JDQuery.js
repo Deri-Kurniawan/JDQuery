@@ -11,6 +11,15 @@ const $ = (query) => {
     return new JDQuery(query);
 }
 
+/**
+ * Query Selector All
+ * @param {String} query 
+ * @returns 
+ */
+const $$ = (query) => {
+    return document.querySelectorAll(query);
+}
+
 class JDQuery {
     constructor(query) {
         this.query = document.querySelector(query);
