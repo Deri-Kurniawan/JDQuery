@@ -1,4 +1,4 @@
-# Javascript Deri Query
+# Javascript Deri Query V0.1
 Javascript Deri Query is javascript queries library
 
 ## Get Started
