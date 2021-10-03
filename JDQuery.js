@@ -16,7 +16,7 @@ class JDQuery {
     }
 
     /**
-     * get value of an element or replace element value
+     * Get value of an element or replace element value
      * @param {String} replacer 
      * @returns string
      */
@@ -28,8 +28,8 @@ class JDQuery {
     }
 
     /**
-     * get innerHTML model on element or replace value of html document element
-     * @param {string} replacer replace html document element
+     * Get innerHTML model on element or replace value of html document element
+     * @param {String} replacer replace html document element
      * @returns string
      */
     html(replacer = null) {
@@ -40,8 +40,8 @@ class JDQuery {
     }
 
     /**
-     * get innerText model on element or replace value of text document element
-     * @param {string} replacer replace html text value element
+     * Get innerText model on element or replace value of text document element
+     * @param {String} replacer replace html text value element
      * @returns string
      */
     text(replacer = null) {
@@ -52,17 +52,17 @@ class JDQuery {
     }
 
     /**
-     * set event listener
-     * @param {string} event event receive
-     * @param {function} callback callback event handler
+     * Set event listener
+     * @param {String} event event receive
+     * @param {Function} handler callback event handler
      * @returns event
      */
-    on(event = null, callback) {
+    on(event = null, handler) {
         if (event == null) {
             console.error('Event not set!');
         } else if (typeof callback !== "function") {
             console.error('Callback Event Handler not set!')
         }
-        return this.query.addEventListener(event, callback);
+        return this.query.addEventListener(event, handler);
     }
 }
