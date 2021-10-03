@@ -3,7 +3,7 @@ Javascript Deri Query is javascript queries library
 
 ## Get Started
 ### Javascript Deri Query CDN
-  `<script src="https://deri-kurniawan.w3spaces.com/JDQuery.js"></script>`
+  `<script src="https://deri-kurniawan.w3spaces.com/JDQuery-v0.1.min.js"></script>`
 ## Starter Template
 
     <!DOCTYPE html>
@@ -14,7 +14,7 @@ Javascript Deri Query is javascript queries library
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- JDQuery CDN -->
-        <script src="https://deri-kurniawan.w3spaces.com/JDQuery.js"></script>
+        <script src="https://deri-kurniawan.w3spaces.com/JDQuery-v0.1.min.js"></script>
         <title>Document</title>
     </head>
     
