@@ -20,9 +20,16 @@ const $$ = (query) => {
     return document.querySelectorAll(query);
 }
 
+/**
+ * Javascript Deri Query Class
+ */
 class JDQuery {
-    constructor(query) {
-        this.query = document.querySelector(query);
+    /**
+     * Initialize selected element
+     * @param {String} query selector
+     */
+    constructor(query = "undefined") {
+        this.element = document.querySelector(query);
     }
 
     /**
@@ -32,9 +39,9 @@ class JDQuery {
      */
     val(replacer = null) {
         if (replacer == null) {
-            return this.query.value;
+            return this.element.value;
         }
-        return this.query.value = replacer;
+        return this.element.value = replacer;
     }
 
     /**
@@ -44,9 +51,9 @@ class JDQuery {
      */
     html(replacer = null) {
         if (replacer == null) {
-            return this.query.innerHTML;
+            return this.element.innerHTML;
         }
-        return this.query.innerHTML = replacer;
+        return this.element.innerHTML = replacer;
     }
 
     /**
@@ -56,9 +63,9 @@ class JDQuery {
      */
     text(replacer = null) {
         if (replacer == null) {
-            return this.query.innerText;
+            return this.element.innerText;
         }
-        return this.query.innerText = replacer;
+        return this.element.innerText = replacer;
     }
 
     /**
@@ -67,7 +74,7 @@ class JDQuery {
      * @returns 
      */
     addClass(values) {
-        return this.query.classList.add(values);
+        return this.element.classList.add(values);
     }
 
     /**
@@ -78,27 +85,27 @@ class JDQuery {
      */
     attr(key = null, value = null) {
         if (key !== null && value !== null) {
-            return this.query.setAttribute(key, value);
+            return this.element.setAttribute(key, value);
         } else if (key === null && value === null) {
-            return this.query.attributes;
+            return this.element.attributes;
         } else if (key !== null) {
-            return this.query.getAttribute(key);
+            return this.element.getAttribute(key);
         }
     }
 
     /**
      * Set event listener
      * @param {String} event event receive
-     * @param {Function} handler callback event handler
+     * @param {Function} callbackEventHandler event handler
      * @returns undefined
      */
-    on(event = null, handler) {
+    on(event = null, callbackEventHandler) {
         if (event == null) {
             return console.error('Event rule not set!');
-        } else if (typeof handler !== "function") {
+        } else if (typeof callbackEventHandler !== "function") {
             return console.error('Callback Event Handler not set!');
         } else {
-            return this.query.addEventListener(event, handler);
+            return this.element.addEventListener(event, callbackEventHandler);
         }
     }
 }
