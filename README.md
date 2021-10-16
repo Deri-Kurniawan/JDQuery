@@ -1,10 +1,44 @@
-# Javascript Deri Query (Under Constructicons)
+# Javascript Deri Query Beta v0.1.1
 Javascript Deri Query is javascript queries library
 
 ## Get Started
+
 ### Javascript Deri Query CDN
+
     <script src="https://deri-kurniawan.w3spaces.com/JDQuery-v0.1.1.min.js"></script>
-## Starter Template
+
+### Change Script Version CDN
+If you want to change your script version, you need to change version digits on JDQuery file.
+Rename it just like : 
+
+    JDQuery-vx.x.x.min.js
+
+for example :
+
+    Before : https://deri-kurniawan.w3spaces.com/JDQuery-v0.1.0.min.js
+    After  : https://deri-kurniawan.w3spaces.com/JDQuery-v0.5.0.min.js
+
+### Starter Template
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- JDQuery CDN -->
+        <script src="https://deri-kurniawan.w3spaces.com/JDQuery-v0.1.1.min.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Hello JDQuery!</h1>
+    </body>
+
+    </html>
+
+### Example Template
 
     <!DOCTYPE html>
     <html lang="en">
@@ -52,4 +86,6 @@ Javascript Deri Query is javascript queries library
 
     </html>
     
+### Docs Comming Soon!
+
 ### Enjoy your query!
