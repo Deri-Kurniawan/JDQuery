@@ -1,0 +1,42 @@
+{
+  "name": "jdquery",
+  "version": "1.0.0",
+  "description": "Javascript Deri Query Library",
+  "main": "src/main.js",
+  "scripts": {
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deri-Kurniawan/JDQuery.git"
+  },
+  "keywords": [
+    "jdquery",
+    "javascript",
+    "library"
+  ],
+  "author": "Deri Kurniawan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Deri-Kurniawan/JDQuery/issues"
+  },
+  "homepage": "https://github.com/Deri-Kurniawan/JDQuery#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "regenerator-runtime": "^0.13.9",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-loader": "^8.1.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
