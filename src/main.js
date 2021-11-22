@@ -1,2 +1,4 @@
 import 'regenerator-runtime';
-import './scripts/JDQuery';
+import JDQuery from './scripts/JDQuery';
+
+const $ = (query) => new JDQuery(query);
