@@ -1,2 +1,2 @@
-# Javascript Deri Query Beta v0.1.1
+# Javascript Deri Query (Under Construction)
 Javascript Deri Query is javascript queries library
